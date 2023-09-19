@@ -35,7 +35,7 @@ Welcome to the CommentCleaner VS Code Extension! This extension enhances your co
 To remove comments using CommentCleaner, follow these steps:
 
 1. Open any file in Visual Studio Code.
-2. Click on the CommentCleaner button in the editor title menu.
+2. Click on the CommentCleaner button in the editor title menu OR Press `Ctrl+'` (`Cmd+'` on macOS) to remove comments from the file.
 3. CommentCleaner will automatically clean the comments for the selected programming language.
 
 <!-- ## Website 

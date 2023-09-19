@@ -3,11 +3,31 @@
   "displayName": "commentcleaner",
   "description": "VS Code Extension to clean up comments in your code",
   "version": "0.0.1",
+  "publisher": "mihirpanchal",
+  "icon": "assets/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MihirRajeshPanchal/commentcleaner"
+  },
+  "keywords": [
+    "comment",
+    "comments",
+    "clean",
+    "purge",
+    "clean comments",
+    "commentcleaner",
+    "panchal",
+    "multilanguage",
+    "cleancomment",
+    "remove comments",
+    "remove",
+    "mihir"
+  ],
   "engines": {
     "vscode": "^1.82.0"
   },
   "categories": [
-    "Other"
+    "Formatters","Debuggers"
   ],
   "activationEvents": [],
   "main": "./extension.js",
@@ -17,6 +37,14 @@
         "command": "extension.removeComments",
         "title": "CommentCleaner",
         "icon": "$(clear-all)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.removeComments",
+        "key": "ctrl+'",
+        "mac": "cmd+'",
+        "when": "editorTextFocus"
       }
     ],
     "menus": {
