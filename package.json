@@ -12,10 +12,21 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "commentcleaner.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "extension.removeComments",
+        "title": "CommentCleaner",
+        "icon": "$(clear-all)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "extension.removeComments",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",

@@ -1,36 +1,58 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
-
-/**
- * @param {vscode.ExtensionContext} context
- */
-function activate(context) {
-
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "commentcleaner" is now active!');
-
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('commentcleaner.helloWorld', function () {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from commentcleaner!');
-	});
-
-	context.subscriptions.push(disposable);
+function removeComments(text, languageId) {
+  let commentPattern;
+  if (languageId === 'javascript' || languageId === 'typescript') {
+    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
+  } else if (languageId === 'python') {
+    commentPattern = /#.*$/gm;
+  } else if (languageId === 'java' || languageId === 'csharp' || languageId === 'kotlin') {
+    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
+  } else if (languageId === 'ruby' || languageId === 'php' || languageId === 'perl') {
+    commentPattern = /#.*$/gm;
+  } else if (languageId === 'go') {
+    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
+  } else if (languageId === 'swift') {
+    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
+  } else if (languageId === 'c' || languageId === 'cpp') {
+    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
+  } else if (languageId === 'rust') {
+    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
+  } else if (languageId === 'lua') {
+    commentPattern = /--.*$/gm;
+  } else if (languageId === 'powershell') {
+    commentPattern = /#.*$/gm;
+  } else if (languageId === 'yaml' || languageId === 'yml') {
+    commentPattern = /#.*/g;
+  } else if (languageId === 'dart') {
+    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
+  }	
+  return text.replace(commentPattern, '');
 }
 
-// This method is called when your extension is deactivated
+function activate(context) {
+  let disposable = vscode.commands.registerCommand('extension.removeComments', function () {
+    const editor = vscode.window.activeTextEditor;
+    if (editor) {
+      const document = editor.document;
+      const languageId = document.languageId;
+      const text = document.getText();
+      const newText = removeComments(text, languageId);
+      editor.edit(editBuilder => {
+        editBuilder.replace(
+          new vscode.Range(document.positionAt(0), document.positionAt(text.length)),
+          newText
+        );
+      });
+    }
+  });
+
+  context.subscriptions.push(disposable);
+}
+
 function deactivate() {}
 
 module.exports = {
-	activate,
-	deactivate
-}
+  activate,
+  deactivate
+};

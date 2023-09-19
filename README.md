@@ -1,65 +1,63 @@
-# commentcleaner README
+# Comment Cleaner VS Code Extension
 
-This is the README for your extension "commentcleaner". After writing up a brief description, we recommend including the following sections.
+<p align="center">
+  <img src="assets/logo.png" alt="CommentCleaner Icon" width="200">
+  <br>
+  CommentCleaner
+</p>
+
+Welcome to the CommentCleaner VS Code Extension! This extension enhances your coding experience by allowing you to seamlessly add line logging statements to your code in various programming languages.
+
+<!-- <p align="center">
+  <img src="assets/CommentCleaner.gif" alt="CommentCleaner Icon" width="1000">
+  <br>
+  Working
+</p> -->
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Remove Comments Functionality:** CommentCleaner provides "Remove Comments" functionality that allows users to remove comments from the currently open code file.
+- **Multi-Language Support:** CommentCleaner supports multiple programming languages, including JavaScript, Python, Java, C#, Ruby, PHP, Go, Swift, Kotlin, C/C++, Rust, TypeScript, Lua, PowerShell, YAML, Dart, and Perl.
+- **Language-Specific Comment Removal:** The extension is designed to recognize the language of the currently open file and apply language-specific comment removal patterns.
+- **Access to Active Text Editor:** The extension retrieves the currently active text editor in VSCode, allowing it to operate on the content of the open file.
+- **Text Replacement:** CommentCleaner replaces the entire content of the open file with the modified text that no longer contains comments.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Launch Visual Studio Code.
+2. Open the Extensions view by clicking on the square icon in the left sidebar or by pressing `Ctrl+Shift+X` (`Cmd+Shift+X` on macOS).
+3. Search for "CommentCleaner" in the Extensions Marketplace.
+4. Click on the "Install" button for the CommentCleaner VS Code Extension.
+5. Once installed, click on the "Reload" button to activate the extension.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
 
-## Requirements
+To remove comments using CommentCleaner, follow these steps:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open any file in Visual Studio Code.
+2. Click on the CommentCleaner button in the editor title menu.
+3. CommentCleaner will automatically clean the comments for the selected programming language.
 
-## Extension Settings
+<!-- ## Website 
+Please do visit our website for more information at [CommentCleaner](https://CommentCleaner.netlify.app/) <br>
+Docker Repository [Docker](https://hub.docker.com/r/mihir5400/CommentCleaner-extension) -->
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Feedback and Contributions
 
-For example:
+Feedback and contributions are highly appreciated! If you encounter any issues, have suggestions for improvements, or would like to contribute to the project, please visit the [GitHub repository](https://github.com/MihirRajeshPanchal/commentcleaner) for the CommentCleaner VS Code Extension.
 
-This extension contributes the following settings:
+## License
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension is released under the [MIT License](LICENSE).
 
-## Known Issues
+## Credits
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+The CommentCleaner extension was created by [Mihir Panchal](https://github.com/MihirRajeshPanchal). Special thanks to the following contributors for their valuable input and support.
 
-## Release Notes
+<p align="start">
+<a  href="https://github.com/MihirRajeshPanchal/commentcleaner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MihirRajeshPanchal/commentcleaner"/>
+</a>
+</p>
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Thank you for choosing the CommentCleaner VS Code Extension! We hope you find it useful and enjoy enhancing your coding experience with seamless comment cleaning . If you have any questions or need assistance, feel free to reach out. Happy coding!
