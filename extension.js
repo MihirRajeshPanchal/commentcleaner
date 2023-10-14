@@ -2,8 +2,11 @@ const vscode = require('vscode');
 
 const commentPatterns = {
   javascript: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  typescript: /\/\/.*|\/\*[\s\S]*?\*\//g,
   python: /#.*$/gm,
   java: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  csharp: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  kotlin: /\/\/.*|\/\*[\s\S]*?\*\//g,
   ruby: /#.*$/gm,
   php: /#.*$/gm,
   perl: /#.*$/gm,
