@@ -1,0 +1,5 @@
+// Hello, World in SCSS
+$hello: "Hello, World!";
+body::before {
+  content: $hello;
+}
