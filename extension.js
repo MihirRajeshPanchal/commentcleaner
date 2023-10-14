@@ -67,8 +67,15 @@ function activate(context) {
   let disposable = vscode.commands.registerCommand('extension.removeComments', function () {
     const editor = vscode.window.activeTextEditor;
     if (editor) {
+      
       const document = editor.document;
       const languageId = document.languageId;
+      if (!commentPatterns[languageId]) {
+        // Notify the user about the lack of predefined patterns
+        vscode.window.showInformationMessage(`Comment removal not supported for language: ${languageId}`);
+        return;
+      }
+      
       const text = document.getText();
       const newText = removeComments(text, languageId);
       editor.edit(editBuilder => {
@@ -77,6 +84,7 @@ function activate(context) {
           newText
         );
       });
+
     }
   });
 
