@@ -1,32 +1,26 @@
 const vscode = require('vscode');
 
+const commentPatterns = {
+  javascript: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  python: /#.*$/gm,
+  java: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  ruby: /#.*$/gm,
+  php: /#.*$/gm,
+  perl: /#.*$/gm,
+  go: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  swift: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  c: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  cpp: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  rust: /\/\/.*|\/\*[\s\S]*?\*\//g,
+  lua: /--.*$/gm,
+  powershell: /#.*$/gm,
+  yaml: /#.*/g,
+  yml: /#.*/g,
+  dart: /\/\/.*|\/\*[\s\S]*?\*\//g,
+};
+
 function removeComments(text, languageId) {
-  let commentPattern;
-  if (languageId === 'javascript' || languageId === 'typescript') {
-    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
-  } else if (languageId === 'python') {
-    commentPattern = /#.*$/gm;
-  } else if (languageId === 'java' || languageId === 'csharp' || languageId === 'kotlin') {
-    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
-  } else if (languageId === 'ruby' || languageId === 'php' || languageId === 'perl') {
-    commentPattern = /#.*$/gm;
-  } else if (languageId === 'go') {
-    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
-  } else if (languageId === 'swift') {
-    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
-  } else if (languageId === 'c' || languageId === 'cpp') {
-    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
-  } else if (languageId === 'rust') {
-    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
-  } else if (languageId === 'lua') {
-    commentPattern = /--.*$/gm;
-  } else if (languageId === 'powershell') {
-    commentPattern = /#.*$/gm;
-  } else if (languageId === 'yaml' || languageId === 'yml') {
-    commentPattern = /#.*/g;
-  } else if (languageId === 'dart') {
-    commentPattern = /\/\/.*|\/\*[\s\S]*?\*\//g;
-  }	
+  const commentPattern = commentPatterns[languageId] || /(?:)/g; // Default to a pattern that doesn't match anything.
   return text.replace(commentPattern, '');
 }
 
