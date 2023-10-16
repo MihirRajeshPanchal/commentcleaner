@@ -42,6 +42,11 @@ To remove comments using CommentCleaner, follow these steps:
 Please do visit our website for more information at [CommentCleaner](https://CommentCleaner.netlify.app/) <br>
 Docker Repository [Docker](https://hub.docker.com/r/mihir5400/CommentCleaner-extension) -->
 
+## Demo
+Here is the video implementation of VS Code Extension CommentCleaner:
+
+<iframe width="560" height="315" src="/demo/demo.mp4" frameborder="0" allowfullscreen></iframe>
+
 ## Feedback and Contributions
 
 Feedback and contributions are highly appreciated! If you encounter any issues, have suggestions for improvements, or would like to contribute to the project, please visit the [GitHub repository](https://github.com/MihirRajeshPanchal/commentcleaner) for the CommentCleaner VS Code Extension.
