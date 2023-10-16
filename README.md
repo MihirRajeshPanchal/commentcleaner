@@ -45,7 +45,8 @@ Docker Repository [Docker](https://hub.docker.com/r/mihir5400/CommentCleaner-ext
 ## Demo
 Here is the video implementation of VS Code Extension CommentCleaner:
 
-<iframe width="560" height="315" src="/demo/demo.mp4" frameborder="0" allowfullscreen></iframe>
+
+https://github.com/jainambarbhaya1509/commentcleaner/assets/78131937/24ccb16c-1daf-4c77-ad8b-0645a90ed042
 
 ## Feedback and Contributions
 
