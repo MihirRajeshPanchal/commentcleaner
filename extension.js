@@ -43,7 +43,24 @@ const commentPatterns = {
 
 function removeComments(text, languageId) {
   const commentPattern = commentPatterns[languageId] || /(?:)/g; // Default to a pattern that doesn't match anything.
-  return text.replace(commentPattern, '');
+  const stringLiterals = [];
+  const placeholder = '___STRING_LITERAL___';
+
+  // Replace string literals with placeholders
+  text = text.replace(/(["'`])(?:\\.|(?!\1)[^\\\n])*\1/g, (match) => {
+    stringLiterals.push(match);
+    return placeholder;
+  });
+
+  // Remove comments
+  text = text.replace(commentPattern, '');
+
+  // Replace placeholders with string literals
+  stringLiterals.forEach((literal) => {
+    text = text.replace(placeholder, literal);
+  });
+
+  return text;
 }
 
 function activate(context) {
