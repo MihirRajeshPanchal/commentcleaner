@@ -38,6 +38,12 @@ To remove comments using CommentCleaner, follow these steps:
 2. Click on the CommentCleaner button in the editor title menu OR Press `Ctrl+'` (`Cmd+'` on macOS) to remove comments from the file.
 3. CommentCleaner will automatically clean the comments for the selected programming language.
 
+
+
+https://github.com/kevinpaul468/commentcleaner/assets/121682091/2c9e257a-abf2-4968-bc0d-29e7b72308b4
+
+
+
 <!-- ## Website 
 Please do visit our website for more information at [CommentCleaner](https://CommentCleaner.netlify.app/) <br>
 Docker Repository [Docker](https://hub.docker.com/r/mihir5400/CommentCleaner-extension) -->
