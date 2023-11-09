@@ -6,7 +6,7 @@
   CommentCleaner
 </p>
 
-Welcome to the CommentCleaner VS Code Extension! This extension enhances your coding experience by allowing you to seamlessly add line logging statements to your code in various programming languages.
+Welcome to the CommentCleaner VS Code Extension! This extension enhances your coding experience by allowing you to seamlessly clean comments from your code in various programming languages.
 
 <!-- <p align="center">
   <img src="assets/CommentCleaner.gif" alt="CommentCleaner Icon" width="1000">
