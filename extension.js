@@ -1,5 +1,6 @@
 const vscode = require('vscode');
 
+// Ignore TODO comments
 const commentPatterns = {
   javascript: /\/\/(?!.*TODO).*|\/\*[\s\S]*?\*\//g,
   typescript: /\/\/(?!.*TODO).*|\/\*[\s\S]*?\*\//g,
