@@ -1,0 +1,244 @@
+repo_name: MihirRajeshPanchal/commentcleaner
+report_id: de4fc76539703717d3554e095c877125
+version: 0.1
+repo_type: Public
+timestamp: '2024-03-05T14:05:10+00:00'
+requested_by: MihirRajeshPanchal
+provider: github
+branch: main
+detected_tools_count: 18
+tools:
+- name: C#
+  description: Simple, general-purpose, object-oriented programming language for the
+    .NET platform
+  website_url: http://csharp.net
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/examples/Example.cs
+  detection_source: examples/Example.cs
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-19 13:05:19.000000000 Z
+- name: CoffeeScript
+  description: A little language that compiles into JavaScript
+  website_url: http://coffeescript.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1178/slQydAMv.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/examples/Example.coffee
+  detection_source: examples/Example.coffee
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-10-14 15:03:20.000000000 Z
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/examples/Example.go
+  detection_source: examples/Example.go
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-19 13:05:19.000000000 Z
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner
+  detection_source: Repo Metadata
+- name: Lua
+  description: Powerful, fast, lightweight, embeddable scripting language
+  website_url: http://www.lua.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2118/128px-Lua-Logo.svg.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/examples/Example.lua
+  detection_source: examples/Example.lua
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-19 13:05:19.000000000 Z
+- name: SQL
+  description: It is a domain-specific language used in programming
+  website_url: https://en.wikipedia.org/wiki/SQL
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/examples/Example.sql
+  detection_source: examples/Example.sql
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-10-14 15:03:20.000000000 Z
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  version: 5.1.3
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Kevin Paul
+  last_updated_on: 2023-10-27 07:45:04.000000000 Z
+- name: ".NET"
+  description: A free, cross-platform, open source developer platform for building
+    many different types of applications
+  website_url: http://www.microsoft.com/net/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-17 14:39:46.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-17 14:39:46.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-17 14:39:46.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner
+  detection_source: Repo Metadata
+- name: Mocha
+  description: Simple, flexible, fun javascript test framework for node.js &amp; the
+    browser
+  website_url: http://mochajs.org/
+  version: 10.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/832/mocha.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-17 14:39:46.000000000 Z
+- name: NuGet
+  description: The package manager for .NET
+  website_url: https://www.nuget.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-17 14:39:46.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-17 14:39:46.000000000 Z
+- name: "@types/glob"
+  description: TypeScript definitions for Glob
+  package_url: https://www.npmjs.com/@types/glob
+  version: 8.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16391/default_fc6e1fc17e404d936593b5b901d67abb3386daa3.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Kevin Paul
+  last_updated_on: 2023-10-27 07:45:04.000000000 Z
+- name: "@types/mocha"
+  description: TypeScript definitions for mocha
+  package_url: https://www.npmjs.com/@types/mocha
+  version: 10.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15893/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Kevin Paul
+  last_updated_on: 2023-10-27 07:45:04.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 20.2.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Kevin Paul
+  last_updated_on: 2023-10-27 07:45:04.000000000 Z
+- name: glob
+  description: A little globber
+  package_url: https://www.npmjs.com/glob
+  version: 8.1.0
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15875/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/MihirRajeshPanchal/commentcleaner/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: MihirRajeshPanchal
+  last_updated_on: 2023-09-17 14:39:46.000000000 Z
